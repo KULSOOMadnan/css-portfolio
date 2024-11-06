@@ -35,7 +35,7 @@ function PortfolioItems({img , title , details} : PORTFOLIOiTEMS) {
 
                                 <div>
                                     <span className="item__title">{title}</span>
-                                    <span className="item__details">{desc}</span>
+                                    <a href={desc} className="item__details">{desc}</a>
 
                                 </div>
                             </li>

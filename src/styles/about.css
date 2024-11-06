@@ -88,7 +88,7 @@
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--weight-700);
-    /* text-align: center; */
+    text-align: center;
     margin-bottom: 15px;
 }
 
@@ -158,4 +158,24 @@
 .resume__description {
     font-size: var(--smaller-font-size);
     line-height: 1.6;
+}
+
+@media (max-width : 800px) {
+    .about__container , .resume__container ,.skills__container{
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: flex-start; */
+    }
+    
+    
+}
+
+@media (max-width: 496px){
+  .stats , .info__list{
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+  }
+
+  .section__title{
+    font-size: var(--h2-font-size);
+  }
 }

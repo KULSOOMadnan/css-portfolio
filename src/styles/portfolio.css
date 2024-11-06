@@ -114,3 +114,44 @@
     font-weight: var(--weight-600);
     
 }
+
+@media (max-width : 769px){
+    .portfolio__container{
+        grid-template-columns:  1fr;
+    }
+    .portfolio__model-content {
+        max-width: 90%;
+        padding: 24px;
+    }
+    .modal__close{
+        top: 2%;
+        right: 2%;
+        filter: contrast(0.5);
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .portfolio__model-content {
+        max-width: 100%;
+        padding: 16px;
+    }
+    .section__title{
+        font-size: var(--h2-font-size);
+      }
+    .modal__img {
+        height: 200px; /* Reduce image height for smaller screens */
+    }
+
+    .modal__title {
+        font-size: calc(var(--h2-font-size) - 4px); /* Slightly reduce font size */
+        margin-bottom: 16px;
+    }
+
+    .modal__list {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        row-gap: 8px;
+    }
+}

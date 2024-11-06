@@ -41,6 +41,11 @@ function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={` ${styles.nav__menu} ${showMenu ? styles.show_menu : styles.nav__menu}`}>
+      <div className={` ${styles.nav__toggle} ${showMenu ? styles.animate_toggel : styles.nav__toggle}`} onClick={() => setShowMenu(!showMenu)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
         <ul className={styles.nav__list}>
           {links.map(({ name, icon, path }, index) => {
             const isActive = pathname === path;

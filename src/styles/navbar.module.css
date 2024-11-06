@@ -10,7 +10,7 @@
 
 .show_menu{
     left: 0;
-    z-index: 100;
+    z-index: 2;
 }
 
 .nav__toggle {
@@ -27,6 +27,7 @@
 
 .animate_toggel span:first-child{
  transform: rotate(45deg) translate(6px, 4px);
+ z-index: 100;
 }
 
 .animate_toggel :nth-child(2){
@@ -36,6 +37,7 @@
 
 .animate_toggel :nth-child(3){
     transform: rotate(-45deg) translate(1px, 1px);
+    z-index: 100;
     
 }
 .nav__toggle span {
@@ -45,6 +47,7 @@
     border-radius: 2px;
     background-color: var(--title-color);
     margin-bottom: 5px;
+    z-index: 100;
 }
 .nav__link {
     align-items: center;
@@ -88,6 +91,7 @@
         right: 30px;
         display: flex;
         align-items: center;
+        z-index: 1;
     }
 
     .nav__items {
@@ -144,4 +148,5 @@
      .nav__active  .nav__icon {
         color: var(--text-white);
     }
+     
 }

@@ -66,7 +66,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+*{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -106,6 +106,7 @@ button , input , textarea {
 
 img{
   max-width: 100%;
+  
 }
 
 /* resusable css */
@@ -116,10 +117,10 @@ img{
 }
 
 .container {
-  /* background-color: var(--first-color); */
+  
   max-width: 1140px;
   margin-inline: auto;
-  padding-inline:15px ;
+  padding-inline:25px ;
 
 }
 .section {
@@ -145,12 +146,11 @@ img{
   position: relative;
   overflow: hidden;
   transition: all 0.35s ease-in-out;
+  margin: 0 auto;
 }
-
 .button:hover{
   color: var(--text-white);
 }
-
 .button:hover::before{
   transform:translateX(0) ;
 }
@@ -174,6 +174,9 @@ img{
   text-align: center;
   line-height:60px ;
 }
+
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
