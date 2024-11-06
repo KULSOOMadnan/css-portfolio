@@ -8,8 +8,8 @@ import Link from 'next/link';
 export default function Home() {
   return (
    <section className="home section grid">
-    <Image src={Profile} alt="Profile Image" className="home__img large-img" />
-    <Image src={Profile2} alt="Profile Image" className="home__img small-img" />
+    <Image src={Profile} alt="Profile Image" className="home__img large-img " />
+    <Image src={Profile2} alt="Profile Image" className="home__img small-img rounded-circle" />
 
     <div className="home-content">
       <div className="home-data">

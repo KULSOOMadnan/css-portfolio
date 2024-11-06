@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Statsinfo= [
-    {id : 1 , no : '6+' , title :<><span>Years of</span><br /><span>Experience</span></>},
+    {id : 1 , no : '6+' , title :<><span>Months of</span><br /><span>Experience</span></>},
     {id : 2 , no : '25+' , title : <><span>Completed</span><br /><span>Projects</span></>},
     {id : 3 , no : '6+' , title : <><span>Completed</span><br /><span>Projects</span></>},
     {id : 4 , no : '6+' , title : <><span>Completed</span><br /><span>Projects</span></>},
