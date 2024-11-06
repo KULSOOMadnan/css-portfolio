@@ -2,7 +2,7 @@
 
 # dependencies
 /node_modules
-.tmp.driveupload
+/.tmp.driveupload
 /.pnp
 .pnp.*
 .yarn/*
