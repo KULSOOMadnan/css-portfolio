@@ -1,6 +1,5 @@
 'use client'
 import ProgressBar from "@ramonak/react-progress-bar";
-import { useEffect, useState } from "react";
 import { FaHtml5 } from "react-icons/fa";
 
 const skills = [

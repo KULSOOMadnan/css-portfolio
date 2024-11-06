@@ -4,7 +4,7 @@ import { FaCode, FaFileCode } from 'react-icons/fa'
 import { FiExternalLink, FiUser } from 'react-icons/fi'
 import '../../styles/portfolio.css'
 
-let portfolio =[
+const portfolio =[
   {id : 6 , img : '/assets/portfolio.png' ,title : 'Portfolio Website', details : [ {icon : <FaFileCode /> , title : 'Project : ' , desc : 'Personal Portfolio'},{icon : <FiUser /> , title : 'Practice : ' , desc : 'Project'},{icon : <FaCode  /> , title : 'Languages : ' , desc : 'Next.js Tailwind css'},{icon : <FiExternalLink/> , title : 'Preview : ' , desc : 'https://portfolio-of-kulsoom.vercel.app/'}],},
   {id : 5 , img : '/assets/todo2.png' ,title : ' To do list ', details : [ {icon : <FaFileCode /> , title : 'Project : ' , desc : 'Photo'},{icon : <FiUser /> , title : 'Practice : ' , desc : 'Project'},{icon : <FaCode  /> , title : 'Languages : ' , desc : 'Html Css Typescript Javascript '},{icon : <FiExternalLink/> , title : 'Preview : ' , desc : 'https://todo-list-sandy-xi.vercel.app/?vercelToolbarCode=KCteo2VDiyyLA5-'}],},
   {id : 1 , img : '/assets/tic.png' ,title : 'Tick Tac Toe', details : [ {icon : <FaFileCode /> , title : 'Project : ' , desc : 'Tic Tac Toe'},{icon : <FiUser /> , title : 'Practice : ' , desc : 'Project'},{icon : <FaCode  /> , title : 'Languages : ' , desc : 'Html Css Javascript'},{icon : <FiExternalLink/> , title : 'Preview : ' , desc : 'https://tic-tac-toe-game-phi-blond.vercel.app/'}],},

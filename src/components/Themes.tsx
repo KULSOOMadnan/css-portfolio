@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/theme.css';
 import { FaCog } from "react-icons/fa";
-import {BsSun , BsMoon}from 'react-icons/bs'
-import ThemeItems from '../components/ThemeItems'
-import { setConfig } from 'next/config';
+import {BsSun , BsMoon}from 'react-icons/bs';
+import ThemeItems from '../components/ThemeItems';
 
 
 const themes = [

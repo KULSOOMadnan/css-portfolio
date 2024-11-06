@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaEnvelopeOpen , FaPhoneSquareAlt , FaFacebookF ,FaTwitter , FaYoutube , FaLinkedin  , FaGithub  } from 'react-icons/fa';
-import { VscGithub } from "react-icons/vsc";
+import { FaEnvelopeOpen , FaPhoneSquareAlt , FaFacebookF ,FaTwitter , FaLinkedin  , FaGithub  } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
 import '../../styles/contact.css'
 
@@ -12,7 +11,7 @@ function Contact() {
       </h2>
       <div className="contact__container container grid">
         <div className="contact__data">
-          <h3 className="contact__title">Don't be shy!</h3>
+          <h3 className="contact__title">Don&apos;t be shy!</h3>
 
           <p className="contact__description">
             Feel free to get touch with me . I am always open to discussing 

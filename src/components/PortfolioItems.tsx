@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react';
-import Close from '../../public/assets/close.svg'
 
 interface PORTFOLIOiTEMS{
     img : string ,
