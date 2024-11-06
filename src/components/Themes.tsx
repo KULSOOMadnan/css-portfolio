@@ -19,48 +19,48 @@ const themes = [
     {id : 10 , img: '/assets/green.png' , color : 'hsla(80, 79%, 26%)'},
 ]
 
-const getStorageColor = () : string => {
-    let color : string  = 'hsl(339, 71%, 38% )'
-    if(localStorage.getItem('color')){
-        color = localStorage?.getItem('color') || 'hsl(339, 71%, 38%)'
-    }
-    return color;
-}
-const getStorageTheme = () : string => {
-    let theme : string  = 'light-theme'
-    if(localStorage.getItem('theme')){
-        theme = localStorage?.getItem('theme') || 'light-theme'
-    }
-    return theme;
-}
 
 
 function Themes() {
     const [showSwitcher , setShowSwitcher] = useState(false);
-    const [color , setColor] = useState(getStorageColor());
-    const [theme , setTheme] = useState(getStorageTheme())
+    // const [color , setColor] = useState(getStorageColor());
+    // const [theme , setTheme] = useState(getStorageTheme())
+    const [color , setColor] = useState('hsl(339, 71%, 38% )');
+    const [theme , setTheme] = useState('light-theme')
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const storedColor = localStorage.getItem('color') || 'hsl(339, 71%, 38% )';
+            const storedTheme = localStorage.getItem('theme') || 'light-theme';
+            setColor(storedColor);
+            setTheme(storedTheme);
+        }
+    }, []);
 
     const changeColor = (color : string) => {
-        setColor(color)
-    }
-    
+        setColor(color);
+    };
+
     const toggleTheme = () => {
-        if(theme === 'light-theme'){
-            setTheme('dark-theme')
-        } else{
-            setTheme('light-theme')
-        }
-    }   
+        setTheme((prevTheme) => (prevTheme === 'light-theme' ? 'dark-theme' : 'light-theme'));
+    };
+
+
 
     useEffect(() => {
-        document.documentElement.style.setProperty('--first-color' , color);
-        localStorage.setItem('color' ,color);
-    } ,[color])
+        if (typeof window !== "undefined") {
+            document.documentElement.style.setProperty('--first-color', color);
+            localStorage.setItem('color', color);
+        }
+    }, [color]);
     
     useEffect(() => {
-        document.documentElement.className = theme;
-        localStorage.setItem('theme' ,theme);
-    } ,[theme])
+        if (typeof window !== "undefined") {
+            document.documentElement.className = theme;
+            localStorage.setItem('theme', theme);
+        }
+    }, [theme]);
+
     return (
     <div>
         <div className={`${showSwitcher ? 'show-switcher' : 'style__switcher'} style__switcher `} >
@@ -87,3 +87,32 @@ function Themes() {
 }
 
 export default Themes
+
+
+    // const changeColor = (color : string) => {
+    //     setColor(color)
+    // }
+    
+    // const toggleTheme = () => {
+    //     if(theme === 'light-theme'){
+    //         setTheme('dark-theme')
+    //     } else{
+    //         setTheme('light-theme')
+    //     }
+    // }   
+
+    
+// const getStorageColor = () : string => {
+//     let color : string  = 'hsl(339, 71%, 38% )'
+//     if(localStorage.getItem('color')){
+//         color = localStorage?.getItem('color') || 'hsl(339, 71%, 38%)'
+//     }
+//     return color;
+// }
+// const getStorageTheme = () : string => {
+//     let theme : string  = 'light-theme'
+//     if(localStorage.getItem('theme')){
+//         theme = localStorage?.getItem('theme') || 'light-theme'
+//     }
+//     return theme;
+// }
