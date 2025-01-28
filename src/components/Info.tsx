@@ -7,7 +7,7 @@ const PersonlInfo = [
     { id: 4, title: "Nationality : ", description: "Pakistani" },
     { id: 6, title: "City  : ", description: "Karachi" },
     { id: 5, title: "Address  : ", description: "-" },
-    { id: 7, title: "Phone : ", description: "+92 312 23435" },
+    { id: 7, title: "Phone : ", description: "+92 315 8505240" },
     { id: 8, title: "Email : ", description: "adnanirfan282@gamil.com" },
     { id: 9, title: "Langauges : ", description: "Urdu , English" },
     { id: 10, title: "Linkedin : ", description: "Kulsoom Adnan" },

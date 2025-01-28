@@ -19,8 +19,6 @@ const themes = [
     {id : 10 , img: '/assets/green.png' , color : 'hsla(80, 79%, 26%)'},
 ]
 
-
-
 function Themes() {
     const [showSwitcher , setShowSwitcher] = useState(false);
     // const [color , setColor] = useState(getStorageColor());

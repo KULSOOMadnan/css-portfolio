@@ -40,8 +40,8 @@ function Contact() {
 
           <div className="contact__socials">
             <a href='https://facebook.com' className="contact__social-link"> <FaFacebookF/></a>
-            <a href='https://linkedin.com' className="contact__social-link"> <FaLinkedin/></a>
-            <a href='https://github.com' className="contact__social-link"> <FaGithub/></a>
+            <a href='https://www.linkedin.com/in/kulsoomadnan/' className="contact__social-link"> <FaLinkedin/></a>
+            <a href='https://github.com/KULSOOMadnan' className="contact__social-link"> <FaGithub/></a>
             <a href='https://twitter.com' className="contact__social-link"> <FaTwitter/></a>
           </div>
         </div>
