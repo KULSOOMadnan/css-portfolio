@@ -101,7 +101,7 @@ function page() {
             <ul className="info__list grid">
               <Info />
             </ul>
-            <Link href="/" download="" className="button">
+            <Link href="https://drive.google.com/file/d/1-0e1WS2gloGHnchengDOtGN-VT1xdnKm/view?usp=sharing" download="" className="button">
               Download Cv
               <span className="button__icon">
                 <FaDownload />
